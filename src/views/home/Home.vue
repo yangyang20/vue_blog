@@ -2,7 +2,9 @@
   <div class="home">
     <img alt="Vue logo" :src="bg_img">
     <Contents :nav="nav" :t_slogan="t_slogan" :head_portrait="head_portrait"></Contents>
-    <div class="footer">footer</div>
+    <div class="footer">
+      <span>©2020  (鄂)-非经营性鄂ICP备18031587号-3</span>
+    </div>
   </div>
 </template>
 
@@ -58,7 +60,7 @@
   }
 
   .footer {
-    background-color: #B3C0D1;
+    background-color: #00ffff;
     color: #333;
     text-align: center;
     line-height: 60px;

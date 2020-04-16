@@ -6,6 +6,7 @@
         <el-main>
 <!--          插槽 主体内容-->
           <slot></slot>
+
         </el-main>
         <el-aside width="400px">
           <div>
