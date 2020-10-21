@@ -10,5 +10,6 @@ module.exports = {
         'utils':'@/utils',
       }
     }
-  }
+  },
+  outputDir:process.env.outputDir
 }

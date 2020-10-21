@@ -3,14 +3,15 @@ import axios from "axios"
 export function request(config) {
   // 创建axios实例
   const instance = axios.create({
-    baseURL:"http://api.yyax.ltd/api/",
+    // baseURL:"",
+    baseURL:`http://${process.env.VUE_APP_BASE_URL}/api/`,
     timeout:5000,
     // xsrfCookieName:document.querySelector('#csrf-token').getAttribute('content')
-
   })
 //    axios拦截器
   // 2.1.请求拦截的作用
   instance.interceptors.request.use(config => {
+    console.log(process.env);
     return config
   }, err => {
     // console.log(err);
